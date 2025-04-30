@@ -1,0 +1,21 @@
+Implement Keyward
+
+Implements is used when a class needs to follow the rules of another class or interface. It means the class must define all the methods and properties written in that other class. It is like a promise to follow the same structure.
+
+abstract class Animal {
+  void sound(); // Method to be defined
+}
+
+class Dog implements Animal {
+  @override
+  void sound() {
+    print("Dog barks");
+  }
+}
+
+void main() {
+  Dog dog = Dog();
+  dog.sound(); // Output: Dog barks
+}
+
+Abstract class method is necessary to override in subclass. Because we have implement parent class as interface.
