@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_clean_architecture/utils/data/exception/app_exception.dart';
+import 'package:flutter_bloc_clean_architecture/services/splash/splash_servcies.dart';
 
-import '../../utils/routes/routes_name.dart';
-
+import '../../data/exception/app_exception.dart';
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+  SplashScreen({super.key});
 
+  SplashServcies splashServcies = SplashServcies();
   @override
   Widget build(BuildContext context) {
+
+    splashServcies.isLogin(context);
+
     return Scaffold(
         body: Center(
           child: TextButton(

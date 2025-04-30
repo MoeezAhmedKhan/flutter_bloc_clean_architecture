@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:flutter_bloc_clean_architecture/utils/data/exception/app_exception.dart';
-import 'package:flutter_bloc_clean_architecture/utils/data/network/base_api_service.dart';
 import 'package:http/http.dart' as http;
+
+import '../exception/app_exception.dart';
+import 'base_api_service.dart';
 
 class NetworkServiceAPI implements BaseAPIService {
   @override

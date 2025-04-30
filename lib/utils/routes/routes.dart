@@ -7,7 +7,7 @@ class Routes {
   static Route<dynamic> generateRoutes(RouteSettings setting) {
     switch (setting.name) {
       case RoutesName.splashScreen:
-        return MaterialPageRoute(builder: (context) => const SplashScreen());
+        return MaterialPageRoute(builder: (context) => SplashScreen());
       case RoutesName.loginScreen:
         return MaterialPageRoute(builder: (context) => const LoginScreen());
       case RoutesName.homehScreen:
