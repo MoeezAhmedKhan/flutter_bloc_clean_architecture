@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_clean_architecture/model/user/user_model.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  LoginScreen({super.key});
+
+  UserModel userModel = UserModel();
 
   @override
   Widget build(BuildContext context) {
