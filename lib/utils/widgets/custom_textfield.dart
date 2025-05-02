@@ -22,7 +22,7 @@ class CustomTextfield extends StatelessWidget {
     return TextFormField(
       focusNode: focusNode,
       controller: controller,
-      decoration: InputDecoration(hintText: hintText),
+      decoration: InputDecoration(hintText: hintText, border: const OutlineInputBorder()),
       onChanged: onChanged,
       keyboardType: keyboardType,
       obscureText: obscureText,
